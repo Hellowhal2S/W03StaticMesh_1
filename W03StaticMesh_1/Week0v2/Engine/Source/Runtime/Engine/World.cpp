@@ -16,6 +16,21 @@ void UWorld::Initialize()
     CreateBaseObject();
     //SpawnObject(OBJ_CUBE);
     FManagerOBJ::CreateStaticMesh("Assets/Dodge/Dodge.obj");
+    AActor* MyCraftonCar0 = SpawnActor<AActor>();
+    UStaticMeshComponent* car0 = MyCraftonCar0->AddComponent<UStaticMeshComponent>();
+    car0->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Dodge.obj"));
+    AActor* MyCraftonCar1 = SpawnActor<AActor>();
+    UStaticMeshComponent* car1 = MyCraftonCar1->AddComponent<UStaticMeshComponent>();
+    car1->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Dodge.obj"));
+    AActor* MyCraftonCar2 = SpawnActor<AActor>();
+    UStaticMeshComponent* car2 = MyCraftonCar2->AddComponent<UStaticMeshComponent>();
+    car2->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Dodge.obj"));
+    AActor* MyCraftonCar3 = SpawnActor<AActor>();
+    UStaticMeshComponent* car3 = MyCraftonCar3->AddComponent<UStaticMeshComponent>();
+    car3->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Dodge.obj"));
+    AActor* MyCraftonCar4 = SpawnActor<AActor>();
+    UStaticMeshComponent* car4 = MyCraftonCar4->AddComponent<UStaticMeshComponent>();
+    car4->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Dodge.obj"));
 
     FManagerOBJ::CreateStaticMesh("Assets/SkySphere.obj");
     AActor* SpawnedActor = SpawnActor<AActor>();
